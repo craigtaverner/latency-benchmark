@@ -14,7 +14,7 @@ RUN apk --no-cache add \
   tini
 
 COPY ./entrypoint /usr/local/bin/
-COPY ./neo4j-client-benchmark /usr/local/bin/
+COPY ./latency-benchmark-service /usr/local/bin/
 
 ARG GIT_SHA=nosha
 ENV GIT_SHA=$GIT_SHA

@@ -135,6 +135,17 @@ func (w *Workload) Remove(client *Neo4jJob) error {
 	}
 }
 
+func (w *Workload) Find(client *Neo4jJob) (error, *Neo4jJob) {
+	log.Printf("Finding Neo4j Client Benchmark Service for %s", client.neo4j.dbid)
+	found := indexOf(w.clients, client)
+	if found < 0 {
+		log.Printf("Could not find client for database '%s'", client.neo4j.dbid)
+		return errors.New(fmt.Sprintf("Could not find client for database '%s'", client.neo4j.dbid)), nil
+	} else {
+		return nil, w.clients[found]
+	}
+}
+
 func (w *Workload) List() []*Neo4jJob {
 	log.Printf("Listing %d Neo4j Client Benchmark Services", len(w.clients))
 	sorted := append([]*Neo4jJob(nil), w.clients...)

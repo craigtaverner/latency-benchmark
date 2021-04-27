@@ -8,10 +8,5 @@ shopt -s inherit_errexit
 declare errmsg="ERROR (${0##*/})":
 trap 'echo >&2 $errmsg trap on error \(rc=${PIPESTATUS[@]}\) near line $LINENO' ERR
 
-# TODO check if we need these certificates (we currently only log to stackdriver and no other k8 stuff)
-# Add the K8s CA to /etc/ssl/certs/ca-certificates.crt
-cp /var/run/secrets/kubernetes.io/serviceaccount/ca.crt /usr/local/share/ca-certificates/kubernetes-ca.crt
-update-ca-certificates 2>&1
-
-echo "Starting the neo4j-client-benchmark..."
-neo4j-client-benchmark
+echo "Starting the latency-benchmark-service..."
+latency-benchmark-service

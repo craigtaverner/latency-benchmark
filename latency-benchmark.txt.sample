@@ -1,0 +1,31 @@
+#
+# Sample config file for latency-benchmark
+#
+# Each line should contain three whitespace separated fields:
+# - Database name (just for logging, not the DBID)
+# - Password
+# - BOLT URI starting with neo4j+s://DBID-......
+#
+# The DBID will be extracted from the URI
+#
+Test2G_1 4JRh7rWxUZA9HLHauGtI48k6L9bS34RSU7sQOhrNSXQ  neo4j+s://143ea694-firedrillmnt3.databases.neo4j.io
+Test2G_2 Uy7Pe59rKYltjzlw5138QY1QRLoaP4keZ5mk6RRcrpg  neo4j+s://dd8a7994-firedrillmnt3.databases.neo4j.io
+Test2G_3 ZUi-kpdeIKN8nCC5y8jp9aG5mTeiZLhcDIkIu27Puy8  neo4j+s://69991031-firedrillmnt3.databases.neo4j.io
+Test2G_4 briQZCeUm_-aN9IgMcswCbC_p2fpuB_VlNxv_BeOy5Q  neo4j+s://4be879f0-firedrillmnt3.databases.neo4j.io
+Test2G_5 jHC2m0hGdiZ1g9CioGthg87fTRpKHF0I1dCgjj1qVvI  neo4j+s://f0bfe09e-firedrillmnt3.databases.neo4j.io
+Test2G_6 wYkfnQncT2iyVvNxwwKJYzxeubBtj0odTEojwOPZAIQ  neo4j+s://5d84a783-firedrillmnt3.databases.neo4j.io
+Test2G_7 FRNOOHb1fYhygEUlu36YyRzW1wogoUXCjfahGKjK3gU  neo4j+s://37b41890-firedrillmnt3.databases.neo4j.io
+Test2G_8 FtO-9pERrxAfW4fSqDvLiMbyEW83tbeFUiwmfx-Ru7o  neo4j+s://e58c7475-firedrillmnt3.databases.neo4j.io
+Test2G_9 CNKlyQC945QO9VgUdzvPELL9506p12mK85z72BtFskM  neo4j+s://a444a428-firedrillmnt3.databases.neo4j.io
+Test2G_10 f_WecbmHijiUfWOHGDJ6OquRdhdAoKkMtzMcILzmVSM  neo4j+s://678d2be5-firedrillmnt3.databases.neo4j.io
+Test1G_1 KHgjrCRD1CVQRaU4G_GDympcX7_7l9Y0aHfKUkzUo9Y  neo4j+s://244a78b7-firedrillmnt3.databases.neo4j.io
+Test1G_2 ul9aT-Ra5Y9Dw9I4Q5LtfZ1HtnzoGW-WG6APotjb6xQ  neo4j+s://9bb3cecc-firedrillmnt3.databases.neo4j.io
+Test1G_3 6yg9F8G-GwZP_ehXtLi877WPq2FAszUVy0KnEDifKUM  neo4j+s://fec9bc35-firedrillmnt3.databases.neo4j.io
+Test1G_4 cbSnIMloS3PxW13dOucdt_BE6wRKUoB5MaRTX2dqRt0  neo4j+s://0def6b23-firedrillmnt3.databases.neo4j.io
+Test1G_5 A6LD3SGWeIOZ4SMr2W5cQDAmpBTO8Y2VGgAVWzwBtcs  neo4j+s://d0234767-firedrillmnt3.databases.neo4j.io
+Test1G_6 Qn1vCyggkNeuAOCnQgQ_H92R8eTvqlYlbDoA2_umzgE  neo4j+s://3c3731f7-firedrillmnt3.databases.neo4j.io
+Test1G_7 uuRckKtBQPveuEpQtgIay6yFAPcujHhB50LXXNt_hLs  neo4j+s://d8bba987-firedrillmnt3.databases.neo4j.io
+Test1G_8 olv3eFjEVJPSL9Ua_lHRIRfjTmfjU87KLA2tjGAt9GI  neo4j+s://dcea3572-firedrillmnt3.databases.neo4j.io
+Test1G_9 slh9qoMtgcIvyiApb8reNI5MpXFia3BL7pJ88KRtmys  neo4j+s://beb86e61-firedrillmnt3.databases.neo4j.io
+Test1G_10 2z3BqcZKsQ1_2XxoHMcNiBps3viPIIPs0PFugtowzpA  neo4j+s://d5e64753-firedrillmnt3.databases.neo4j.io
+

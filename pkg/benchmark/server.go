@@ -192,6 +192,9 @@ func (s *Server) neo4jHandler(workload *Workload) http.HandlerFunc {
 				case "remove":
 					err := workload.Remove(neo4j_job)
 					s.handleNeo4jResult(writer, neo4j_job, workload, err, "Failed to remove workload for neo4j database")
+				case "show":
+					err, found := workload.Find(neo4j_job)
+					s.handleNeo4jResult(writer, found, workload, err, "Failed show workload for neo4j database")
 				default:
 					s.invalidPath(writer, parts[1], request.URL.Path)
 				}
